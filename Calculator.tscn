@@ -1,0 +1,483 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://SFNSText-Regular.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Calculator1.tres" type="StyleBox" id=2]
+[ext_resource path="res://Calculator2.tres" type="StyleBox" id=3]
+[ext_resource path="res://Calculator3.tres" type="StyleBox" id=4]
+[ext_resource path="res://Calculator4.tres" type="StyleBox" id=5]
+[ext_resource path="res://Calculator5.tres" type="StyleBox" id=6]
+[ext_resource path="res://Calculator6.tres" type="StyleBox" id=7]
+[ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://Calculator.gd" type="Script" id=9]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.647059, 0.647059, 0.647059, 1 )
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="DynamicFont" id=2]
+size = 26
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 26
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 26
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 1, 0.619608, 0.0352941, 1 )
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="DynamicFont" id=4]
+size = 26
+use_filter = true
+extra_spacing_top = -4
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 1, 0.619608, 0.0352941, 1 )
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="DynamicFont" id=9]
+size = 48
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFontData" id=10]
+font_path = "res://SFNSText-Regular.otf"
+
+[sub_resource type="DynamicFont" id=11]
+size = 24
+use_filter = true
+font_data = SubResource( 10 )
+
+[node name="Node2D" type="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+anchor_bottom = 1.0
+margin_bottom = 640.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Delete" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -296.0
+margin_top = -1008.0
+margin_right = -232.0
+margin_bottom = -944.0
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = ExtResource( 2 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+text = "C"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -296.0
+margin_top = -792.0
+margin_right = -232.0
+margin_bottom = -728.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -224.0
+margin_top = -792.0
+margin_right = -160.0
+margin_bottom = -728.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 6 )
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -152.0
+margin_top = -792.0
+margin_right = -88.0
+margin_bottom = -728.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -296.0
+margin_top = -864.0
+margin_right = -232.0
+margin_bottom = -800.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -224.0
+margin_top = -864.0
+margin_right = -160.0
+margin_bottom = -800.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 6 )
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -152.0
+margin_top = -864.0
+margin_right = -88.0
+margin_bottom = -800.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="7" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -296.0
+margin_top = -936.0
+margin_right = -232.0
+margin_bottom = -872.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -224.0
+margin_top = -936.0
+margin_right = -160.0
+margin_bottom = -872.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 6 )
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -152.0
+margin_top = -936.0
+margin_right = -88.0
+margin_bottom = -872.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "9"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -296.0
+margin_top = -720.0
+margin_right = -160.0
+margin_bottom = -656.0
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "   0"
+align = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="multiply" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -80.0
+margin_top = -936.0
+margin_right = -16.0
+margin_bottom = -872.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "×"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="divide" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -80.0
+margin_top = -1008.0
+margin_right = -16.0
+margin_bottom = -944.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "÷"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="minus" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -80.0
+margin_top = -864.0
+margin_right = -16.0
+margin_bottom = -800.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "−"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="plus" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -80.0
+margin_top = -792.0
+margin_right = -16.0
+margin_bottom = -728.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dot" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -152.0
+margin_top = -720.0
+margin_right = -88.0
+margin_bottom = -656.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 6 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 6 )
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="result" type="Button" parent="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -80.0
+margin_top = -720.0
+margin_right = -16.0
+margin_bottom = -656.0
+rect_pivot_offset = Vector2( 88, 144 )
+custom_styles/hover = ExtResource( 5 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 7 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "="
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+margin_left = -296.0
+margin_top = -448.0
+margin_right = -16.0
+margin_bottom = -384.0
+custom_styles/focus = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 9 )
+scroll_active = false
+scroll_following = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="Control"]
+margin_left = -296.0
+margin_top = -488.0
+margin_right = -16.0
+margin_bottom = -456.0
+custom_styles/focus = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 11 )
+scroll_active = false
+scroll_following = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Control/Delete" to="." method="_on_Delete_pressed"]
+[connection signal="pressed" from="Control/1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="Control/2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="Control/3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="Control/4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="Control/5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="Control/6" to="." method="_on_6_pressed"]
+[connection signal="pressed" from="Control/7" to="." method="_on_7_pressed"]
+[connection signal="pressed" from="Control/8" to="." method="_on_8_pressed"]
+[connection signal="pressed" from="Control/9" to="." method="_on_9_pressed"]
+[connection signal="pressed" from="Control/0" to="." method="_on_0_pressed"]
+[connection signal="pressed" from="Control/multiply" to="." method="_on_multiply_pressed"]
+[connection signal="pressed" from="Control/divide" to="." method="_on_divide_pressed"]
+[connection signal="pressed" from="Control/minus" to="." method="_on_minus_pressed"]
+[connection signal="pressed" from="Control/plus" to="." method="_on_plus_pressed"]
+[connection signal="pressed" from="Control/dot" to="." method="_on_dot_pressed"]
+[connection signal="pressed" from="Control/result" to="." method="_on_result_pressed"]
