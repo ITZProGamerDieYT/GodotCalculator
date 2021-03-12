@@ -23,32 +23,32 @@ outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=3]
 size = 26
 outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="DynamicFont" id=4]
 size = 26
 outline_color = Color( 0, 0, 0, 1 )
 use_filter = true
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=7]
+[sub_resource type="StyleBoxFlat" id=5]
 bg_color = Color( 1, 0.619608, 0.0352941, 1 )
 corner_radius_top_left = 32
 corner_radius_top_right = 32
 corner_radius_bottom_right = 32
 corner_radius_bottom_left = 32
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=6]
 size = 26
 use_filter = true
 extra_spacing_top = -4
 font_data = ExtResource( 1 )
 
-[sub_resource type="StyleBoxFlat" id=3]
+[sub_resource type="StyleBoxFlat" id=7]
 bg_color = Color( 1, 0.619608, 0.0352941, 1 )
 corner_radius_top_left = 32
 corner_radius_top_right = 32
@@ -143,7 +143,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 6 )
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 3 )
 text = "2"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -163,7 +163,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 6 )
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "3"
 __meta__ = {
@@ -204,7 +204,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 6 )
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 3 )
 text = "5"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -224,7 +224,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 6 )
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "6"
 __meta__ = {
@@ -264,7 +264,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 6 )
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 3 )
 text = "8"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -284,7 +284,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 6 )
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "9"
 __meta__ = {
@@ -326,8 +326,8 @@ rect_pivot_offset = Vector2( 88, 144 )
 custom_styles/hover = ExtResource( 5 )
 custom_styles/pressed = ExtResource( 3 )
 custom_styles/focus = ExtResource( 7 )
-custom_styles/normal = SubResource( 7 )
-custom_fonts/font = SubResource( 4 )
+custom_styles/normal = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "×"
 __meta__ = {
@@ -347,8 +347,8 @@ rect_pivot_offset = Vector2( 88, 144 )
 custom_styles/hover = ExtResource( 5 )
 custom_styles/pressed = ExtResource( 3 )
 custom_styles/focus = ExtResource( 7 )
-custom_styles/normal = SubResource( 3 )
-custom_fonts/font = SubResource( 4 )
+custom_styles/normal = SubResource( 7 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "÷"
 __meta__ = {
@@ -369,7 +369,7 @@ custom_styles/hover = ExtResource( 5 )
 custom_styles/pressed = ExtResource( 3 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 5 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "−"
 __meta__ = {
@@ -390,7 +390,7 @@ custom_styles/hover = ExtResource( 5 )
 custom_styles/pressed = ExtResource( 3 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 5 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "+"
 __meta__ = {
@@ -411,7 +411,7 @@ custom_styles/hover = ExtResource( 6 )
 custom_styles/pressed = ExtResource( 4 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 6 )
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "."
 __meta__ = {
@@ -432,7 +432,7 @@ custom_styles/hover = ExtResource( 5 )
 custom_styles/pressed = ExtResource( 3 )
 custom_styles/focus = ExtResource( 7 )
 custom_styles/normal = ExtResource( 5 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "="
 __meta__ = {
